@@ -1,0 +1,61 @@
+'''elif user_choice == '6':'''
+
+      
+      '''inventory = {'Ford': 'F150', 'Chevy': 'Silverado', 'Toyota': 'Tundra'}
+      vehicle = input('What vehicle would you like to purchase? ')
+      if vehicle in inventory:
+        print('The price of the ' + vehicle + ' is $30,000')
+else:
+    print('Sorry, we do not have that vehicle in stock.')'''
+        
+        
+  
+'''if len(inventory.cars) < 1:
+            print("Sorry there are no vehicles currently in inventory")
+            continue
+        print("Please enter the number associated with the vehicle to be purchased: ")
+        purchase_number = input(
+            "Please enter the number associated with the vehicle to be purchased: ")
+        if purchase_number - 1 > len(inventory.cars):
+            print("This is an invalid number")
+        else:
+            vehicle = inventory.cars[purchase_number - 1]
+        
+        print("This vehicle has been purchased")'''
+    
+'''def car_price(price):
+    return price
+      car = input('What car would you like to buy? ')
+return inventory['cars'][car]['price']
+
+
+# Do I make a new Class?
+    def car_year(car):
+      return inventory['cars'][car]['year']
+
+
+    def car_color(car):
+        return inventory['cars'][car]['color']
+
+
+    def car_model(car):
+        return inventory['cars'][car]['model']
+
+
+    def car_price(car):
+        return inventory['cars'][car]['price']
+
+
+    def car_info(car):
+        print('The price of the {} {} {} is ${}'.format(car_color(car),
+                                                        car_year(car),
+                                                        car_model(car),
+                                                        car_price(car)))
+
+
+    def main():
+        car = input('What car would you like to buy? ')
+        if car in inventory['cars']: 
+          car_info(car)
+        else:
+          print('Sorry, that car is not in our inventory')'''
