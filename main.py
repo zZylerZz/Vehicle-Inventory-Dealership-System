@@ -8,9 +8,6 @@
 
 
 # 2022-12-09T07:57:00Z: check choice 2, you have an unnecessary continue statement that is exiting the control flow statement and returning to the main menu
-print('Vehicle Inventory')
-vehicles = []
-car = {}
 
 
 class Vehicle_Screen:
@@ -56,11 +53,14 @@ class Car_Inventory:
 
 
 
+print('Vehicle Inventory')
+vehicles = []
+car = {}
 inventory = Car_Inventory()
 
 while True:
 
- 
+
 
   print('Choice 1: Add Vehicle to Inventory')
 
