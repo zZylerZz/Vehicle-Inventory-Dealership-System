@@ -39,34 +39,22 @@ class Vehicle_Screen:
  
 
 class Car_Inventory:
-
     def __init__(self):
-
         self.cars = []
 
     def add_car(self):
-
         vehicle = Vehicle_Screen()
-
         if vehicle.add_car() == True:
-
             self.cars.append(vehicle)
-
-            print()
-
-            print('This vehicle has been added, Thank you')
+            print('\nThis vehicle has been added, Thank you')
 
     def display_car_inventory(self):
-
         print('\t'.join(['', 'Make', 'Model', 'Year', 'Color', 'Price']))
-
         for idx, vehicle in enumerate(self.cars):
-
             print(idx + 1, end='\t')
-
             print(vehicle)
 
- 
+
 
 inventory = Car_Inventory()
 
