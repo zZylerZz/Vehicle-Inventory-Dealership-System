@@ -53,14 +53,12 @@ class Car_Inventory:
 
 
 
-print('Vehicle Inventory')
 vehicles = []
 car = {}
 inventory = Car_Inventory()
 
 while True:
-
-
+  print('\nVehicle Inventory')
 
   print('Choice 1: Add Vehicle to Inventory')
 
