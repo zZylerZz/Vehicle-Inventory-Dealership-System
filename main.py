@@ -11,44 +11,29 @@
 print('Vehicle Inventory')
 vehicles = []
 car = {}
+
+
 class Vehicle_Screen:
-
     def __init__(self):
-
         self._make = ''
-
         self._model = ''
-
         self._year = 0
-
         self._color = ''
-
         self._price = 0
 
     def add_car(self):
-
         try:
-
             self._make = input('Enter vehicle make: ')
-
             self._model = input('Enter vehicle model: ')
-
             self._year = int(input('Enter vehicle year: '))
-
             self._color = input('Enter vehicle color: ')
-
             self._price = int(input('Enter vehicle price: '))
-
             return True
-
         except ValueError:
-
             print('Please try entering vehicle information again using only whole numbers for mileage and year')
-
             return False
 
     def __str__(self):
-
         return '\t'.join(str(a) for a in [self._make, self._model, self._year, self._color, self._price])
 
  
