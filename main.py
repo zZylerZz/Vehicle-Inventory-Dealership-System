@@ -8,86 +8,57 @@
 
 
 # 2022-12-09T07:57:00Z: check choice 2, you have an unnecessary continue statement that is exiting the control flow statement and returning to the main menu
-print('Vehicle Inventory')
-vehicles = []
-car = {}
+
+
 class Vehicle_Screen:
-
     def __init__(self):
-
         self._make = ''
-
         self._model = ''
-
         self._year = 0
-
         self._color = ''
-
         self._price = 0
 
     def add_car(self):
-
         try:
-
             self._make = input('Enter vehicle make: ')
-
             self._model = input('Enter vehicle model: ')
-
             self._year = int(input('Enter vehicle year: '))
-
             self._color = input('Enter vehicle color: ')
-
             self._price = int(input('Enter vehicle price: '))
-
             return True
-
         except ValueError:
-
             print('Please try entering vehicle information again using only whole numbers for mileage and year')
-
             return False
 
     def __str__(self):
-
         return '\t'.join(str(a) for a in [self._make, self._model, self._year, self._color, self._price])
 
  
 
 class Car_Inventory:
-
     def __init__(self):
-
         self.cars = []
 
     def add_car(self):
-
         vehicle = Vehicle_Screen()
-
         if vehicle.add_car() == True:
-
             self.cars.append(vehicle)
-
-            print()
-
-            print('This vehicle has been added, Thank you')
+            print('\nThis vehicle has been added, Thank you')
 
     def display_car_inventory(self):
-
         print('\t'.join(['', 'Make', 'Model', 'Year', 'Color', 'Price']))
-
         for idx, vehicle in enumerate(self.cars):
-
             print(idx + 1, end='\t')
-
             print(vehicle)
 
- 
 
+
+vehicles = []
+car = {}
 inventory = Car_Inventory()
 
 while True:
-
- 
+  print('\nVehicle Inventory')
 
   print('Choice 1: Add Vehicle to Inventory')
 
